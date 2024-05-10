@@ -7,16 +7,23 @@
     <title>Kuzey Tuna Kale</title>
     <script>
         function sifre() {
-            var promt = promt("Merhaba")
-            alert("Hoş geldiniz!");
-            alert("BEN KUZEY.");
+            var password = prompt("Lütfen şifrenizi girin:");
+            if (password === "BEN KUZEY.") {
+                
+                alert("Hoş geldiniz!");
+            } else {
+                // Şifre yanlışsa erişimi engelle
+                alert("Hatalı şifre! Erişim engellendi.");
+                window.location.href = "about:blank";
+            }
+
             
         }
     </script>
 </head>
 <body onload="sifre()">
     <h1>Kuzey</h1>
-    <p>Buraya tıklıyarak giriş yapabilirsiniz. <br> Merak etmeyin bu bir virüsü <br> telefonunuza yerleştirmek için deĝildir, <br> her ne kadar bilgim yetebilecek olsa <br> da aklım ve iradem izin vermez.<br></p>
+    <p>Buraya tıklıyarak giriş yapabilirsiniz<br></p>
     <a href="https://doodles.google/doodle/doodle-champion-island-games-begin/">
         <button>Tıkla</button>
     </a>
